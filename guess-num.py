@@ -1,7 +1,11 @@
 print('這是一個猜數字的遊戲程式')
 import random
-
-r = random.randint(1, 100)
+start = input('請決定開始數字: ')
+end = input('請決定結束數字: ')
+start = int(start)
+end = int(end)
+print('遊戲開始')
+r = random.randint(start, end)
 count = 0
 while True:
 	count = count + 1
